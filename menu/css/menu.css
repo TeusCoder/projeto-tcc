@@ -1,0 +1,81 @@
+:root {
+    --menu-size: 250px;
+}
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(255, 231, 219);
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 74, 173);
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: rgb(0, 74, 173);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(255, 231, 219);
+    z-index: 1;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 30%;
+}
+
+.menu ul li {
+    display: block;
+    margin-top: 60%;
+}
+
+.menu ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: rgb(0, 74, 173);
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+    background-color:  rgb(247, 217, 201);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}
