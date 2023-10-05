@@ -1,15 +1,15 @@
 :root {
-    --menu-size: 250px;
+    --menu-size: 150px;
 }
 body {
     background-color: #eee;
 }
 
 header {
-    background-color: rgb(255, 231, 219);
+    background-color: #515151;
     padding: 10px;
     text-align: center;
-    color: rgb(0, 74, 173);
+    color: #71E7EB;
 }
 
 .content {
@@ -21,14 +21,14 @@ header {
 
 #btnMenu {
     cursor: pointer;
-    padding: 5px;
+    padding: 15px;
     transition: all 0.5s;
 }
 
 #btnClose {
     padding: 8px;
-    background-color: rgb(78, 37, 37);
-    color: rgb(0, 74, 173);
+    background-color: #515151;
+    color: #71E7EB;
     font-size: 20px;
     font-weight: bold;
 }
@@ -42,25 +42,27 @@ header {
     top: 0;
     width: var(--menu-size);
     height: 100%;
-    background-color: rgb(255, 231, 219);
+    background-color: #515151;
     z-index: 1;
 }
 
 .menu ul {
     list-style: none;
-    margin-top: 30%;
+    margin-top: 40%;
 }
 
 .menu ul li {
     display: block;
-    margin-top: 60%;
+    margin-top: 70%;
 }
-
+ #i{
+    font-size: 35px;
+ }
 .menu ul li a {
     transition: background 0.3s;
     display: block;
-    color: rgb(0, 74, 173);
-    font-size: 19px;
+    color: #71E7EB;
+    font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
